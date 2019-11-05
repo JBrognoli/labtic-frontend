@@ -1,35 +1,30 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar clipped-left app fixed color="darker">
+      <v-app-bar-nav-icon />
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Labtic</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-divider class="mx-1" inset vertical />
+      <v-toolbar-title class="headline text-uppercase">
+        <span class="font-weight-light">Frontend</span>
+      </v-toolbar-title>
+      <v-spacer />
+      <v-btn text>
+        <span class="mr-2">Sair</span>
+        <v-icon>mdi-logout</v-icon>
       </v-btn>
     </v-app-bar>
-
     <v-content>
-      <HelloWorld />
+      <router-view />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-  },
+  components: {},
   data: () => ({
     //
   }),
