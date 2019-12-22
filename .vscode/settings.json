@@ -1,4 +1,3 @@
 {
-  "prettier.eslintIntegration": false,
   "editor.formatOnSave": true
 }
